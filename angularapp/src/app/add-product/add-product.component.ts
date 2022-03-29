@@ -11,7 +11,22 @@ export class AddProductComponent implements OnInit {
   {
     return this.addproduct.get('d_name');
   }
-  get
+  get d_price()
+  {
+    return this.addproduct.get('d_price');
+  }
+  get d_desc()
+  {
+    return this.addproduct.get('d_desc');
+  }
+  get img()
+  {
+    return this.addproduct.get('img');
+  }
+  get quant
+  {
+    return this.addproduct.get('quant');
+  }
 // addproduct=new FormGroup({
 //   d_name: new FormControl(''),
 //   d_price:new FormControl(''),

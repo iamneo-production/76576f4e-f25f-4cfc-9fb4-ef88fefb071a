@@ -2,8 +2,7 @@
         <h5 style="background-color: gold;color:white;width:25.4%;text-align: center;margin-top: 8%;" >Add Product</h5>
         <form [formGroup]="addproduct">
             <div class="form-group">
-                <input [class.is-invalid]="addproduct.get('d_name').invalid && addproduct.get('d_name').touched" type="text" formcontrolName="d_name" class="form-control" placeholder="Product Name" id="dressName">
-                <!-- <small [class.d-none]="addproduct.get('d_name').valid || addproduct.get('d_name').untouched" class="text-danger> dress name reuired</small> -->
+               
             </div> <br>
             <div class="form-group">
                 <input type="text"formcontrolName="d_price" class="form-control" placeholder="Product Price" id="dressPrice">
@@ -20,5 +19,4 @@
 
             <button class="btn btn-primary" type="submit" id="addDressButton">Add</button>
         </form>
-        {{addproduct.value | json}}
     </div>
