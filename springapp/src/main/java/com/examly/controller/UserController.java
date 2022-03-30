@@ -36,7 +36,6 @@ public class UserController {
         user.setPassword(password);
         user.setEmail(mail);
         userDao.save(user);
-        System.out.println(user);
         ModelAndView mv = new ModelAndView();
         mv.setViewName("login");
         return mv;
