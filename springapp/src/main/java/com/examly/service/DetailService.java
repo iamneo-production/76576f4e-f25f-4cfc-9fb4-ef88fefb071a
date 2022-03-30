@@ -17,7 +17,6 @@ public class DetailService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userDao.findById(username).orElse(null);
-        System.out.println("authentication " + user);
         if (user == null) {
             throw new UsernameNotFoundException("User not found");
         }
