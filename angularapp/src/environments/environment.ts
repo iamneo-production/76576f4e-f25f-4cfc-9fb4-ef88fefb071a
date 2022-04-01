@@ -6,6 +6,8 @@ export const environment = {
   production: false,
   baseUrl:"http://localhost:4200/addProduct",
   addproducturl:"/admin/addProduct",
+  production: false
+
 };
 
 /*
