@@ -1,0 +1,22 @@
+    <div class="container-fluid">
+        <h5 style="background-color: gold;color:white;width:25.4%;text-align: center;margin-top: 8%;" >Add Product</h5>
+        <form [formGroup]="addproduct">
+            <div class="form-group">
+               
+            </div> <br>
+            <div class="form-group">
+                <input type="text"formcontrolName="d_price" class="form-control" placeholder="Product Price" id="dressPrice">
+            </div><br>
+            <div class="form-group">
+                <input type="text"formcontrolName="d_desc" class="form-control" id="dressDescription" placeholder="Product Description" rows="10" id="dressDescription">
+            </div><br>
+            <div class="form-group">
+                <input type="file" formcontrolName="img" class="form-control" placeholder="Image URL" id="dressImageURL">
+            </div><br>
+            <div class="form-group">
+                <input type="text"formcontrolName=" quant"class="form-control" placeholder="Product Quantity" id="dressQuantity">
+            </div><br>
+
+            <button class="btn btn-primary" type="submit" id="addDressButton">Add</button>
+        </form>
+    </div>
