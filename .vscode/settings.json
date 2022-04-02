@@ -1,5 +1,6 @@
 {
     "typescript.disableAutomaticTypeAcquisition": true,
     "git.autofetch": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
     
 }
