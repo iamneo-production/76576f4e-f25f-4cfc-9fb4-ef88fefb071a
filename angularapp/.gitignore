@@ -1,5 +1,6 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+<<<<<<< HEAD
 # compiled output
 /dist
 /tmp
@@ -16,6 +17,21 @@ speed-measure-plugin*.json
 
 # IDEs and editors
 /.idea
+=======
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+>>>>>>> b541e64b423fa6ea74bd26bb00178a14db236504
 .project
 .classpath
 .c9/
@@ -23,7 +39,11 @@ speed-measure-plugin*.json
 .settings/
 *.sublime-workspace
 
+<<<<<<< HEAD
 # IDE - VSCode
+=======
+# Visual Studio Code
+>>>>>>> b541e64b423fa6ea74bd26bb00178a14db236504
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -31,6 +51,7 @@ speed-measure-plugin*.json
 !.vscode/extensions.json
 .history/*
 
+<<<<<<< HEAD
 # misc
 /.sass-cache
 /connect.lock
@@ -42,5 +63,17 @@ testem.log
 /typings
 
 # System Files
+=======
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+>>>>>>> b541e64b423fa6ea74bd26bb00178a14db236504
 .DS_Store
 Thumbs.db

@@ -1,11 +1,25 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+<<<<<<< HEAD
+=======
+  "cli": {
+    "analytics": false
+  },
+>>>>>>> b541e64b423fa6ea74bd26bb00178a14db236504
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "angularapp": {
       "projectType": "application",
+<<<<<<< HEAD
       "schematics": {},
+=======
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+>>>>>>> b541e64b423fa6ea74bd26bb00178a14db236504
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -18,7 +32,10 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+<<<<<<< HEAD
             "aot": true,
+=======
+>>>>>>> b541e64b423fa6ea74bd26bb00178a14db236504
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -30,12 +47,28 @@
           },
           "configurations": {
             "production": {
+<<<<<<< HEAD
+=======
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+>>>>>>> b541e64b423fa6ea74bd26bb00178a14db236504
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+<<<<<<< HEAD
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -69,6 +102,32 @@
               "browserTarget": "angularapp:build:production"
             }
           }
+=======
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "angularapp:build:production"
+            },
+            "development": {
+              "browserTarget": "angularapp:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+>>>>>>> b541e64b423fa6ea74bd26bb00178a14db236504
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -92,6 +151,7 @@
             ],
             "scripts": []
           }
+<<<<<<< HEAD
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -117,12 +177,19 @@
               "devServerTarget": "angularapp:serve:production"
             }
           }
+=======
+>>>>>>> b541e64b423fa6ea74bd26bb00178a14db236504
         }
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "angularapp",
   "cli": {
     "analytics": false
   }
 }
+=======
+  "defaultProject": "angularapp"
+}
+>>>>>>> b541e64b423fa6ea74bd26bb00178a14db236504

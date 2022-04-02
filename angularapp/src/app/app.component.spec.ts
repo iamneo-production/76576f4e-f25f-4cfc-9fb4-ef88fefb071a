@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
@@ -33,3 +34,27 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('.content span').textContent).toContain('angularapp app is running!');
   });
 });
+=======
+import { TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { AppComponent } from './app.component';
+
+describe('AppComponent', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [
+        RouterTestingModule
+      ],
+      declarations: [
+        AppComponent
+      ],
+    }).compileComponents();
+  });
+
+  it('test_case11',()=>{
+    const fixture = TestBed.createComponent(AppComponent);
+      const app = fixture.componentInstance;
+      expect(app).toBeTruthy();
+  });
+});
+>>>>>>> b541e64b423fa6ea74bd26bb00178a14db236504
