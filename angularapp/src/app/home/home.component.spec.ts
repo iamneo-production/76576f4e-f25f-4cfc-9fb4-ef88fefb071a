@@ -5,21 +5,13 @@ import { HomeComponent } from './home.component';
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
-    })
-    .compileComponents();
-  });
+  let loginService:any,router:any;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = new HomeComponent(loginService,router);
   });
 
-  it('should create', () => {
+  it('test_case15', () => {
     expect(component).toBeTruthy();
   });
 });

@@ -5,21 +5,13 @@ import { SignupComponent } from './signup.component';
 describe('SignupComponent', () => {
   let component: SignupComponent;
   let fixture: ComponentFixture<SignupComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ SignupComponent ]
-    })
-    .compileComponents();
-  });
-
+  let router:any;
+  let signupService:any;
   beforeEach(() => {
-    fixture = TestBed.createComponent(SignupComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = new SignupComponent(router,signupService);
   });
 
-  it('should create', () => {
+  it('test_case14', () => {
     expect(component).toBeTruthy();
   });
 });
