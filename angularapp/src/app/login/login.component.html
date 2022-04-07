@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In Form</title>
-</head>
-<body>
-    <h1>Sign Up Now</h1><br>
-    <input type="" placeholder="Enter Email"><br><br>
-    <input type="text" placeholder="Enter UserName"><br><br>
-    <input type="number" placeholder="Enter Mobile Number" pattern="0-9"><br><br>
-    <input type="password" placeholder="Enter Password"><br><br>
-    <input type="password" placeholder="Confirm Password"><br><br>
-</body>
-</html>
+<div class="split left">
+    <div class="centered">
+        <h2 class="login">LOGIN</h2>
+        <form action="/home">
+            <input class="box" type="text" placeholder="Email" name="email" id="email"><br><br>
+            <input class="box" type="password" placeholder="Password" name="password" id="password"><br><br>
+            <button  class="btn btn-success" >Login</button><br><br>
+        </form>
+        New to bookstore?<a class="signup" id="siginLink" routerLink="/signup">Click here</a>
+    </div>
+  </div>
+  <div class="split right">
+    <div class="centered">
+        <img src="assets/Login_Signup.png">
+    </div>
+  </div>

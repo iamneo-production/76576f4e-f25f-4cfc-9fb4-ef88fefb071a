@@ -1,0 +1,27 @@
+.navbar .home{
+    font-family: 'Poiret One', cursive;;
+    color:white;
+}
+a{
+    color:white;
+    padding-right:20px;
+}
+nav {
+    background-color: #6ad12e;
+}
+.fonts {
+    padding-top: 250px;
+    text-align: center;
+}
+.left{
+    width:35%;
+    position: fixed;
+}
+.right
+{
+    width:65%;
+    position: fixed;
+}
+img{
+    width:150px;
+}

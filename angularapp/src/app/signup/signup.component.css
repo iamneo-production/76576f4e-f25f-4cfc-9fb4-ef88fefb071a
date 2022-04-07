@@ -16,13 +16,15 @@
     position: absolute;
     transform: translate(-50%, -50%);
 }
-.left .login{
+.left .signup{
     color:#c1de31;
     font-family: 'MS Sans Serif',sans-serif;
 }
-.signup 
-{
-    color:#c1de31;
+.login {
+    color:yellow;
+}
+.btn btn-success{
+    height:10px;
 }
 .box{
     border-radius:10px;
