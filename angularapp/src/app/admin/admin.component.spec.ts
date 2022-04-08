@@ -5,8 +5,12 @@ import { AdminComponent } from './admin.component';
 describe('AdminComponent', () => {
   let component: AdminComponent;
   let fixture: ComponentFixture<AdminComponent>;
-  beforeEach(() => {
-    component = new AdminComponent();
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ AdminComponent ]
+    })
+    .compileComponents();
   });
 
   beforeEach(() => {
@@ -15,7 +19,7 @@ describe('AdminComponent', () => {
     fixture.detectChanges();
   });
 
-  it('test_case12', () => {
-    expect(component).toBeDefined();
+  it('should create', () => {
+    expect(component).toBeTruthy();
   });
 });

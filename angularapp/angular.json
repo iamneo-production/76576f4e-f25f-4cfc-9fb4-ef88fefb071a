@@ -1,12 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": false
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angularapp": {
+    "FantasyDress": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/angularapp",
+=======
+            "outputPath": "dist/fantasy-dress",
+>>>>>>> 1d70e898eccff16adb8ea2eef15e68ae35fbbe99
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +72,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "angularapp:build:production"
             },
             "development": {
               "browserTarget": "angularapp:build:development"
+=======
+              "browserTarget": "FantasyDress:build:production"
+            },
+            "development": {
+              "browserTarget": "FantasyDress:build:development"
+>>>>>>> 1d70e898eccff16adb8ea2eef15e68ae35fbbe99
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +90,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "angularapp:build"
+=======
+            "browserTarget": "FantasyDress:build"
+>>>>>>> 1d70e898eccff16adb8ea2eef15e68ae35fbbe99
           }
         },
         "test": {
@@ -105,5 +117,9 @@
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "angularapp"
+=======
+  "defaultProject": "FantasyDress"
+>>>>>>> 1d70e898eccff16adb8ea2eef15e68ae35fbbe99
 }
