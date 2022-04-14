@@ -1,14 +1,35 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Angularapp</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Angularapp</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <app-root>
+      <h2>Welcome to Fantasy Dress Store</h2>
+      <section class="hori">
+        <div class="vert" style="padding-left: 8%;">
+          <img src="https://drive.google.com/uc?export=view&id=1xZ9tEofOhRLa8ljF3KPQ52dxBsTuvFvs" width="100px" height="100px"> 
+        </div>
+        <div class="overlap">
+          <p class="box">
+            The best online store is here with many stylings, grocceries and dress materials of your choice. Come and select your favourites.
+          </p> 
+        </div>  
+        <div class="vert" style="padding-right: 8%;">
+          <img src="https://drive.google.com/uc?export=view&id=1Ax5_qbXbUfhO68kj2GIhP9noMCasWbRM" width="100px" height="100px">
+        </div>
+      </section>
+      <section align="center">
+        Have an account <a href="./app/login/login.component.html"><button>Login</button></a>
+        <br><br>
+        New user? <a href="./app/signup/signup.component.html"><button>Sign up</button></a>
+      </section>
+    </app-root>
+  </body>
 </html>
