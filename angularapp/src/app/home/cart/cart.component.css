@@ -1,0 +1,63 @@
+.navbar {
+    background-color: rgb(255,200,0);
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font: bold;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: rgb(240,240,240);
+    color: black;
+}
+
+.navbar a.current {
+    font-style: italic;
+}
+
+.navbar-move {
+    float: right;
+}
+
+.fontset {
+    font-family: Calibri;
+}
+
+table,th{
+    border: 1px solid white;
+    border-collapse: collapse;
+    border-radius: 2%;
+}
+
+td{
+    text-align: center;
+    background-color: rgb(240,240,240);
+}
+th {
+    background-color: rgb(255,200,0);
+    border: 1px solid rgb(255,200,0);
+    color: white;
+}
+
+table {
+    width: 97%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: rgb(255,200,0);
+    border-radius: 12%;
+    border: 1px solid rgb(255,200,0);
+    margin-top: 3%;
+    margin-left: 2%;
+    padding: 1% 1% 1% 1%;
+}
